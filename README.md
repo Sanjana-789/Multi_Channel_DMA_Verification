@@ -21,7 +21,7 @@ Assertions (SVA)
 Fixed Priority Arbitration
 
 ## Tools
-SystemVerilog
+- SystemVerilog
 VS Code
 GitHub
 NC-Verilog / Xcelium
