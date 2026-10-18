@@ -21,11 +21,11 @@ Assertions (SVA)
 Fixed Priority Arbitration
 
 ## Tools
-SystemVerilog
-VS Code
-GitHub
-NC-Verilog / Xcelium
-Vivado Simulator
+- SystemVerilog
+- VS Code
+- GitHub
+- NC-Verilog / Xcelium
+- Vivado Simulator
 
-**Author**
+## **Author**
 K Sanjana Nayaka
