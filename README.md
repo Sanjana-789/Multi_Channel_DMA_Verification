@@ -28,4 +28,4 @@ To verify a 4-channel DMA Controller using a SystemVerilog layered testbench arc
 - Vivado Simulator
 
 ## **Author**
-K Sanjana Nayaka
+K Sanjana Nayaka 
