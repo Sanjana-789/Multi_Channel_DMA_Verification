@@ -3,6 +3,9 @@
 ## Project Objective
 To verify a 4-channel DMA Controller using a SystemVerilog layered testbench architecture.
 
+## Archtecture Diagram (4-Channel DMA Controller)
+![alt text](image.png)
+
 ## Verification Components
 - Interface
 - Transaction
