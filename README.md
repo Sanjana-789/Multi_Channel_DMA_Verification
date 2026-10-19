@@ -37,14 +37,13 @@ flowchart TD
         ARB -->|"Grant"| MASTER
 
         MASTER["Master Interface<br/>Read / Write"]
+
     end
 
     MASTER -->|"Data Bus"| MEM
-
-    MEM["System Memory"]
-
     MASTER -->|"DMA Transfer"| PER
 
+    MEM["System Memory"]
     PER["Peripherals<br/>UART / SPI / ADC / GPIO"]
 
     MASTER -.->|"Transfer Complete Interrupt"| CPU
