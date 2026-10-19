@@ -4,9 +4,7 @@
 To verify a 4-channel DMA Controller using a SystemVerilog layered testbench architecture.
 
 ## Architecture Diagram
-
 ```mermaid
-Architecture Diagram (4-Channel DMA Controller)
 flowchart TD
 
     CPU["CPU / Host"]
