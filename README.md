@@ -30,7 +30,7 @@ flowchart TD
         CH3 -->|"Request"| ARB
         CH4 -->|"Request"| ARB
 
-        ARB["Round Robin<br/>Arbiter"]
+        ARB{"Fixed Priority<br/>Arbiter"}
 
         ARB -->|"Grant"| MASTER
 
