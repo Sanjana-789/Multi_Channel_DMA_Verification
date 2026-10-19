@@ -3,7 +3,7 @@
 ## Project Objective
 To verify a 4-channel DMA Controller using a SystemVerilog layered testbench architecture.
 
-## Architecture Diagram
+## Architecture Diagram (4-Channel DMA Controller)
 ```mermaid
 flowchart TD
 
@@ -47,6 +47,50 @@ flowchart TD
     MASTER -.->|"Transfer Complete Interrupt"| CPU
 ```
 
+## Verification Diagram 
+```mermaid
+flowchart TB
+
+    T[Test]
+
+    E[Environment]
+
+    G[Generator]
+
+    D[Driver]
+
+    M[Monitor]
+
+    S[Scoreboard]
+
+    MB1["(gen2drv)"]
+
+    MB2["(mon2scb)"]
+
+    IF[Interface]
+
+    DUT[4-Channel DMA Controller]
+
+    T --> E
+
+    E --> G
+    E --> D
+    E --> M
+    E --> S
+
+    G --> MB1
+    MB1 --> D
+
+    D --> IF
+
+    IF --> DUT
+
+    DUT --> M
+
+    M --> MB2
+
+    MB2 --> S
+```
 
 ## Verification Components
 - Interface
