@@ -2,9 +2,13 @@ class generator;
 
     mailbox gen2drv;
 
+    int num_transactions;
+
     function new(mailbox gen2drv);
 
         this.gen2drv = gen2drv;
+
+        num_transactions = 50;
 
     endfunction
 
@@ -12,19 +16,26 @@ class generator;
 
         dma_transaction tr;
 
-        repeat(10)
-
+        repeat(num_transactions)
         begin
 
             tr = new();
 
-            assert(tr.randomize());
+            assert(tr.randomize())
+            else
+                $error("[GEN] Randomization Failed");
 
             gen2drv.put(tr);
 
-            $display("[GEN] Generated req = %b", tr.req);
+            $display(
+                "[GEN] req=%b size=%0d",
+                tr.req,
+                tr.transfer_size
+            );
 
         end
+
+        $display("[GEN] Generation Complete");
 
     endtask
 
